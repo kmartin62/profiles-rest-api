@@ -1,0 +1,149 @@
+    1  exit
+    2  ls
+    3  ls -a
+    4  cd /vagrant/
+    5  ls
+    6  ls -a
+    7  clear
+    8  ls
+    9  python hello_world.py 
+   10  ls
+   11  exit
+   12  clear
+   13  mkvirtualenv profiles_api --python=python3
+   14  mkvirtualenv
+   15  exit
+   16  mkvirtualenv profiles_api --python=python3
+   17  mkvirtualenv
+   18  cd /vagrant/
+   19  mkvirtualenv
+   20  cd ..
+   21  ls
+   22  clear
+   23  ls
+   24  mkvirtualenv
+   25  ls
+   26  cd home/ubuntu/
+   27  ls
+   28  ls -a
+   29  cat .bashrc 
+   30  cd ../..
+   31  ls
+   32  mkvirtualenv
+   33  exit
+   34  clear
+   35  mkvirtualenv
+   36  mkvirtualenv
+   37  mkvirtualenv profiles_api python=python3
+   38  which virtualenvwrapper
+   39  exit
+   40  mkvirtualenv
+   41  which virtualenvwrapper
+   42  which virtualenvwrapper1
+   43  which virtualenvwrapper12
+   44  exit
+   45  mkvirtualenv
+   46  pip install virtualenvwrapper
+   47  export WORKON_HOME=~/Envs
+   48  mkdir -p $WORKON_HOME
+   49  ls
+   50  source /usr/local/bin/virtualenvwrapper.sh 
+   51  mkvirtualenv
+   52  clear
+   53  mkvirtualenv profiles_api --python=python3
+   54  ls
+   55  deactivate 
+   56  ls
+   57  cd Envs/
+   58  ls
+   59  cd ..
+   60  clear
+   61  workon profiles_api
+   62  deactivate 
+   63  workon profiles_api
+   64  pip install django==1.11
+   65  pip install djangorestframework==3.6.2
+   66  clear
+   67  cd /vagrant/src/
+   68  django-admin.py startproject profiles_project
+   69  cd profiles_project/
+   70  ls
+   71  python manage.py startapp profiles_api
+   72  clear
+   73  cd ../..
+   74  ls
+   75  clear
+   76  ls
+   77  pip freeze
+   78  pip freeze > requirements.txt
+   79  ls
+   80  cat requirements.txt 
+   81  clear
+   82  cd src/profiles_project/
+   83  ls
+   84  python manage.py runserver 0.0.0.0:8080
+   85  clear
+   86  ls
+   87  exit
+   88  ls
+   89  workon profiles_api
+   90  cd Envs/
+   91  workon profiles_api
+   92  clear
+   93  ls
+   94  deactivate
+   95  mkvirtualenv test
+   96  cd /vagrant/
+   97  ls
+   98  cd ..
+   99  ls
+  100  clear
+  101  ls
+  102  cd home/
+  103  ls
+  104  clear
+  105  exit
+  106  workon
+  107  source .profile 
+  108  workon
+  109  nano .profile 
+  110  . .profile 
+  111  ls
+  112  cd envs/
+  113  ls
+  114  cd ..
+  115  cd Envs/
+  116  ls
+  117  workon profiles_api/
+  118  cd ..
+  119  mkvirtualenv profiles_api
+  120  ls
+  121  cd /vagrant/
+  122  ls
+  123  cd src/
+  124  ls
+  125  cd profiles_project/
+  126  ls
+  127  python manage.py runserver 0.0.0.0:8080
+  128  clear
+  129  ls
+  130  pip install django==1.11
+  131  pip install djangorestframework==3.6.2
+  132  python manage.py runserver 0.0.0.0:8080
+  133  clear
+  134  exit
+  135  ls
+  136  workon profiles_api
+  137  cd /vagrant/src/profiles_project/
+  138  ls
+  139  python manage.py runserver 0.0.0.0:8080
+  140  exit
+  141  workon profiles_api
+  142  cd /vagrant/src/profiles_project/
+  143  ls
+  144  clear
+  145  ls
+  146  python manage.py makemigrations
+  147  python manage.py migrate
+  148  history
+  149  history > commands.txt
