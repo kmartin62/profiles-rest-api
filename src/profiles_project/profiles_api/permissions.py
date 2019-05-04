@@ -11,3 +11,13 @@ class UpdateOwnProfile(permissions.BasePermission):
             return True
 
         return obj.id == request.user.id #Ako ID na objektot sto saka da napravi izmena e isto so IDto na avtenticiraniot korisnik
+
+class PostOwnStatus(permissions.BasePermission):
+    """Allows users to update their own status"""
+
+    def has_object_permission(self, request, view, obj):
+
+        if request.method in permissions.SAFE_METHODS:
+            return True
+
+        return obj.id == request.user.id
